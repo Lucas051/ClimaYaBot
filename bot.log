@@ -1,0 +1,54 @@
+2024-10-10 16:08:03,027 - logger - INFO - User 5076694946 asked: Actualmente Paysandu tiene una temperatura de 20.51°C con nubes.
+Con temperaturas mínimas de: 20.51°C
+Con temperaturas máximas de: 20.51°C
+La presión atmosférica: 1012hPa
+Humedad: 84%
+Que tengas un buen día! 👋
+
+Algo lindo de esa ciudad
+2024-10-10 16:08:05,222 - logger - INFO - IA responded to user 5076694946: ¡Hola! 🌤️ Paysandú es una ciudad encantadora situada a orillas del río Uruguay, famosa por su arquitectura histórica, sus playas sobre el río y su rica gastronomía. ¡Espero que tengas un día maravilloso! 💖
+2024-10-10 16:08:49,088 - logger - INFO - User 5076694946 asked: Actualmente Artigas tiene una temperatura de 11.69°C con muy nuboso.
+Con temperaturas mínimas de: 11.69°C
+Con temperaturas máximas de: 11.69°C
+La presión atmosférica: 1015hPa
+Humedad: 91%
+Que tengas un buen día! 👋
+
+Que atracciones hay ahi
+2024-10-10 16:08:51,030 - logger - INFO - IA responded to user 5076694946: ¡Hola! En Artigas, un lugar de interés muy importante es la Casa del General Artigas, que es un museo dedicado a la historia de este prócer uruguayo. También puedes visitar el Parque Rodó, ideal para disfrutar de la naturaleza y paseos al aire libre. ¡Espero que tengas un día genial explorando estos lugares! 🌳🏛️
+2024-10-10 16:10:31,284 - logger - INFO - User 5076694946 asked: Actualmente Montevideo tiene una temperatura de 15.9°C con llovizna de gran intensidad.
+Con temperaturas mínimas de: 15.9°C
+Con temperaturas máximas de: 17.08°C
+La presión atmosférica: 1014hPa
+Humedad: 94%
+Que tengas un buen día! 👋
+
+Tiene playas?
+2024-10-10 16:10:32,592 - logger - INFO - IA responded to user 5076694946: ¡Hola! 🏖️ ¡Claro que sí! Montevideo cuenta con varias playas a lo largo de su costa, donde puedes disfrutar del sol y el mar. ¡Qué tengas un excelente día también! 👋
+2024-10-10 16:15:09,370 - logger - INFO - User 5076694946 asked: Actualmente New York tiene una temperatura de 16.82°C con cielo claro.
+Con temperaturas mínimas de: 15.47°C
+Con temperaturas máximas de: 17.98°C
+La presión atmosférica: 1016hPa
+Humedad: 42%
+Que tengas un buen día! 👋
+
+Pueden llegar huracanes?
+2024-10-10 16:15:11,481 - logger - INFO - IA responded to user 5076694946: ¡Hola! 😊 En Nueva York, es poco común que lleguen huracanes debido a su ubicación en la costa noreste de Estados Unidos. Los huracanes generalmente afectan más a regiones como el sureste de Estados Unidos y el Caribe. ¡Que tengas un excelente día! 🌞🌪️
+2024-10-10 16:19:20,416 - logger - INFO - User 5076694946 asked: Actualmente Aukland tiene una temperatura de 4.8°C con lluvia ligera.
+Con temperaturas mínimas de: 4.8°C
+Con temperaturas máximas de: 4.8°C
+La presión atmosférica: 995hPa
+Humedad: 70%
+Que tengas un buen día! 👋
+
+Es normal que sea tan frio?
+2024-10-10 16:19:22,553 - logger - INFO - IA responded to user 5076694946: ¡Hola! 🌧️❄️ En Auckland, una temperatura de 4.8°C con lluvia ligera puede considerarse fría, pero no es inusual para esta época del año. La humedad del 70% también puede hacer que se sienta más frío. ¡Espero que tengas un buen día a pesar del clima fresco! ☔️
+2024-10-10 16:47:02,272 - logger - INFO - User 5076694946 asked: Actualmente Madrid tiene una temperatura de 15.78°C con algo de nubes.
+Con temperaturas mínimas de: 14.25°C
+Con temperaturas máximas de: 16.53°C
+La presión atmosférica: 1014hPa
+Humedad: 54%
+Que tengas un buen día! 👋
+
+Alguna catedral importante
+2024-10-10 16:47:04,494 - logger - INFO - IA responded to user 5076694946: ¡Hola! 😊 Una catedral muy importante en Madrid es la Catedral de la Almudena, dedicada a la Virgen María. Es una de las principales atracciones turísticas de la ciudad y se encuentra justo al lado del Palacio Real. ¡Que tengas un excelente día también! 🌞
