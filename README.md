@@ -11,4 +11,4 @@ Welcome to the Telegram Weather! This bot allows users to check the current weat
 
 💬 AI-powered Fun Facts: Ask for interesting facts about cities using OpenAI!
 
-🚀<a href="t.me/ClimaYaBot">Click here to open the link </a>
+🚀<a href="https://t.me/ClimaYaBot">Click here to open the link </a>
