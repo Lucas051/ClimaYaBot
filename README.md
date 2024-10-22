@@ -2,7 +2,7 @@
 
 Welcome to the Telegram Weather! This bot allows users to check the current weather of any city and keeps track of the number of interactions you’ve had with it. Simple, fast, and interactive! 😊
 
-📝 Features
+📝 Features <br>
 🌦 Weather Information: Ask for the current weather in any city around the world.
 
 🔢 Message Counter: Track how many times you've interacted with the bot.
