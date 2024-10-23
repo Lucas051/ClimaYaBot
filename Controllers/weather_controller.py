@@ -43,11 +43,11 @@ async def get_weather(city_name: str):
     else:
         return "No se pudo obtener el clima."
 
-async def ask_for_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def ask_for_city(update: Update):
     await update.callback_query.message.reply_text("Por favor, escribe el nombre de la ciudad para consultar el clima.")
 
 # Handle user response
-async def send_weather(update: Update, context: ContextTypes.DEFAULT_TYPE, user_state):
+async def send_weather(update: Update, user_state):
     city_name = update.message.text
     weather_report = await get_weather(city_name)
     await update.message.reply_text(weather_report)
@@ -61,18 +61,20 @@ async def send_weather(update: Update, context: ContextTypes.DEFAULT_TYPE, user_
     }
 
 # Handle additional questions with openai
-async def handle_additional_question(update: Update, context: ContextTypes.DEFAULT_TYPE, user_state):
+async def handle_additional_question(update: Update, user_state):
     chat_id = update.message.chat_id
     if user_state.get(chat_id, {}).get("state") == "ask_more":
         user_question = update.message.text
+        
+        # Log user´s question
+        logger.info(f"User {chat_id} asked: {user_question}")
 
         weather_report = user_state[chat_id]["weather_report"]
 
         # Include weather report in the question
         user_question = f"{weather_report}\n\n{user_question}"
         
-         # Log user´s question
-        logger.info(f"User {chat_id} asked: {user_question}")
+     
 
         openai.api_key = openai_api_key
         response = openai.chat.completions.create(

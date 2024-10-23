@@ -1,5 +1,5 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup 
-from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
+from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, MessageHandler, filters
 from dotenv import load_dotenv
 import os
 
@@ -20,7 +20,7 @@ def initialize_user_state(chat_id):
         }
 
 # Main Menu
-async def show_menu(update: Update, context):
+async def show_menu(update: Update, ):
     chat_id = update.message.chat_id
     
     if chat_id not in user_state:
@@ -33,22 +33,22 @@ async def show_menu(update: Update, context):
     await update.message.reply_text('Elige una opción 👇', reply_markup=keyboard)
 
 # /exit count mode
-async def exit_to_menu(update: Update, context):
+async def exit_to_menu(update: Update):
     chat_id = update.message.chat_id
 
     user_state[chat_id]["state"] = "/start"  
     
     await update.message.reply_text("Has salido del modo de conteo 👋")
-    await show_menu(update, context)
+    await show_menu(update, )
 
 # /exit weather mode
-async def exit_from_weather(update: Update, context):
+async def exit_from_weather(update: Update):
     initialize_user_state(update.message.chat_id) 
     await update.message.reply_text("Está bien, si necesitas algo más, solo pregúntame! 😁")
-    await show_menu(update, context)
+    await show_menu(update, )
 
 # Button Controller
-async def button_controller(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def button_controller(update: Update):
     query = update.callback_query.data
     chat_id = update.callback_query.message.chat_id
 
@@ -57,29 +57,29 @@ async def button_controller(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if query == "weather":
         user_state[chat_id]["state"] = "weather"  # Change state to "weather"
-        await ask_for_city(update, context)
+        await ask_for_city(update, )
 
     elif query == "count":
         user_state[chat_id]["state"] = "count"  # Change state to "count"
-        await show_count_menu(update, context, user_state)
+        await show_count_menu(update, user_state)
 
     elif query == "reset_count":
         user_state[chat_id]["count"] = 0 
         await update.callback_query.message.reply_text(f'Contador reseteado a {user_state[chat_id]["count"]} ✅')
-        await show_count_menu(update, context, user_state)
+        await show_count_menu(update, user_state)
 
 
 # Message Handler
-async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def message_handler(update: Update):
     chat_id = update.message.chat_id
     if user_state[chat_id]["state"]  == "count":
-        await count_messages(update, context, user_state)
+        await count_messages(update, user_state)
         
     elif user_state[chat_id]["state"]  == "weather":
-        await send_weather(update, context, user_state)  
+        await send_weather(update, user_state)  
         
     elif user_state[chat_id]["state"]  == "ask_more":
-        await handle_additional_question(update, context, user_state) 
+        await handle_additional_question(update, user_state) 
         
     else:
         await update.message.reply_text("Por favor elige una opción primero usando /start.")

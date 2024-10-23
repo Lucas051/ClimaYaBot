@@ -1,7 +1,6 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import ContextTypes
   
-async def show_count_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, user_state):
+async def show_count_menu(update: Update, user_state):
      chat_id = update.callback_query.message.chat.id
     
      if "count" not in user_state[chat_id]:
@@ -13,7 +12,7 @@ async def show_count_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, us
                 [InlineKeyboardButton(text="Resetear Conteo", callback_data="reset_count")],
             ]))
 
-async def count_messages(update: Update, context: ContextTypes.DEFAULT_TYPE, user_state):
+async def count_messages(update: Update, user_state):
     chat_id = update.message.chat_id
     
     user_state[chat_id]["count"] += 1

@@ -52,3 +52,21 @@ Que tengas un buen día! 👋
 
 Alguna catedral importante
 2024-10-10 16:47:04,494 - logger - INFO - IA responded to user 5076694946: ¡Hola! 😊 Una catedral muy importante en Madrid es la Catedral de la Almudena, dedicada a la Virgen María. Es una de las principales atracciones turísticas de la ciudad y se encuentra justo al lado del Palacio Real. ¡Que tengas un excelente día también! 🌞
+2024-10-10 19:10:11,088 - logger - INFO - User 5076694946 asked: Actualmente Artigas tiene una temperatura de 10.41°C con muy nuboso.
+Con temperaturas mínimas de: 10.41°C
+Con temperaturas máximas de: 10.41°C
+La presión atmosférica: 1016hPa
+Humedad: 90%
+Que tengas un buen día! 👋
+
+Me podrías decir algo interesante de ese lugar
+2024-10-10 19:10:13,871 - logger - INFO - IA responded to user 5076694946: ¡Hola! 👋 ¡Claro! Algo interesante sobre Artigas es que es la ciudad más septentrional de Uruguay y también es conocida como la "Capital del Artiguismo", en honor al prócer uruguayo José Gervasio Artigas. ¡Espero que tengas un buen día también! 🌟
+2024-10-10 19:10:31,642 - logger - INFO - User 5076694946 asked: Actualmente Artigas tiene una temperatura de 10.41°C con muy nuboso.
+Con temperaturas mínimas de: 10.41°C
+Con temperaturas máximas de: 10.41°C
+La presión atmosférica: 1016hPa
+Humedad: 90%
+Que tengas un buen día! 👋
+
+Que es septentrional?
+2024-10-10 19:10:32,776 - logger - INFO - IA responded to user 5076694946: ¡Hola! ☀️ "Septentrional" es un término que se utiliza para referirse a algo que está relacionado con el norte o se encuentra en esa dirección. ¡Espero que haya sido útil mi respuesta! ¿Hay algo más en lo que pueda ayudarte hoy? 
